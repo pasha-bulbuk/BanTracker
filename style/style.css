@@ -1,0 +1,307 @@
+body {
+	padding: 0;
+	margin: 0;
+	background: #edeef0;
+	font-family: 'Roboto', sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #676766;
+}
+
+.user_information:hover {
+	background-color: #f5f7fa;
+}
+
+.container {
+	width: 882px;
+	margin: 0 auto;
+}
+
+.fl_l {
+	float: left;
+}
+
+.fl_r {
+	float: right;
+}
+
+.header {
+	background: #5d80a6;
+	height: 48px;
+  padding: 0 auto;
+  text-align: center;
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+}
+
+.header__logo {
+	margin-left: 25px;
+	line-height: 48px;
+  height: 48px;
+  font-weight: 700;
+  font-size: 17px;
+}
+
+.header__logo a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.header__exit {
+	width: 103.594px;
+	line-height: 48px;
+  height: 48px;
+	cursor: pointer;
+	color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.header__exit:hover {
+	background-color: #335e8f;
+}
+
+.accounts {
+	height: 120px;
+	margin-top: 48px;
+}
+
+section {
+	margin-bottom: 10px;
+}
+
+.Slider__line {
+  display: flex;
+  background: #fff;
+  border: 1px solid #edeef0;
+  overflow-x: scroll;
+}
+
+.Slider__line::-webkit-scrollbar {
+  display: none;
+}
+
+.accounts__item, .group__item {
+  display: table-cell;
+  width: 72px;
+  text-align: center;
+  padding: 12px 3px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #71757a;
+  box-sizing: border-box;
+  max-width: 72px;
+  cursor: pointer;
+}
+
+.accounts__item:last-child {
+  margin: 0 8px 0 0;
+}
+
+.Slider__line:after {
+  content: "";
+  min-width: 8px;
+  display: inline-block;
+}
+
+.accounts__add {
+	font-size: 40px;
+	padding-top: 20px;
+	color: #FAFAFA;
+}
+
+.accounts__avatarWrap, .group__avatarWrap {
+  margin: auto;
+  width: 60px;
+  height: 60px;
+  border-radius: 60px;
+  border: 2px solid transparent;
+}
+
+.accounts__avatar {
+  width: 56px;
+  height: 56px;
+  overflow: hidden;
+  border-radius: 56px;
+  display: block;
+  margin: 2px;
+}
+
+.accounts__avatar:first-child {
+	background: #BFBFBF;
+}
+
+.accounts__name, .group__name {
+  margin: 2px 0 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.box {
+	display: inline-block;
+}
+
+.content {
+	background: #fff;
+  border: 1px solid #edeef0;
+	padding: 25px 0 23px 0;
+	color: #676766;
+}
+
+.daily_statistics {
+	overflow: hidden;
+  padding: 0 42px;
+  font-size: 22px;
+}
+
+.daily_statistics -> .statistic {
+	font-size: 18px;
+} 
+
+.statistic div.box {
+	padding-right: 10px;
+} 
+
+.user_information {
+	overflow: hidden;
+	padding: 0 50px;
+}
+
+.user_information .accounts__name {
+	margin-top: 34px;
+}
+
+.user_information .statistic {
+	margin-top: 34px;
+}
+
+.modalDialog {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	display: none;
+	pointer-events: none;
+}
+
+.modalDialog:target {
+	display: block;
+	pointer-events: auto;
+	transition: 3s;
+}
+
+.modalDialog > div {
+	width: 614px;
+	position: relative;
+	margin: 10% auto;
+	padding: 15px 19px 15px 20px;
+	border-radius: 5px;
+	background: #edeef0;
+}
+
+.close {
+	color: #A9A9A9;
+	line-height: 25px;
+	position: absolute;
+	right: -1px;
+	text-align: center;
+	top: -1px;
+	width: 24px;
+	text-decoration: none;
+	font-weight: bold;
+	border-radius: 12px;
+}
+
+.close:hover {
+	color: #757575;
+}
+
+.tabs {
+	min-width: 320px;
+	max-width: 800px;
+	padding: 0px;
+	margin: 0 auto;
+}
+/* Стили секций с содержанием */
+.tabs > section {
+	display: none;
+	padding: 15px;
+	background: #fff;
+	border: 1px solid #ddd;
+	margin-bottom: 0px;
+  width: 581px;
+}
+
+/* Прячем чекбоксы */
+.tabs > input {
+	display: none;
+	position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+.tabs > label {
+	display: inline-block;
+	margin: 0 0 -1px;
+	padding: 15px 25px;
+	width: 150px;
+	text-align: center;
+	color: #aaa;
+	border: 0px solid #ddd;
+	border-width: 1px 1px 1px 1px;
+	background: #f1f1f1;
+	border-radius: 3px 3px 0 0;
+}
+
+/* Изменения стиля переключателей вкладок при наведении */
+ 
+.tabs > label:hover {
+	color: #888;
+	cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs > input:checked + label {
+	color: #555;
+	border-top: 1px solid #5d80a6;
+	border-bottom: 1px solid #fff;
+	background: #fff;
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked~#content-tab1, 
+#tab2:checked~#content-tab2, 
+#tab3:checked~#content-tab3 {
+	display: block;
+}
+/* Убираем текст с переключателей 
+* и оставляем иконки на малых экранах
+*/
+ 
+@media screen and (max-width: 680px) {
+	.tabs > label {
+		font-size: 0;
+	}
+	.tabs > label:before {
+		margin: 0;
+		font-size: 18px;
+	}
+}
+/* Изменяем внутренние отступы 
+*  переключателей для малых экранов
+*/
+@media screen and (max-width: 400px) {
+	.tabs>label {
+		padding: 15px;
+	}
+}
+
+.post_img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  vertical-align: top;
+}

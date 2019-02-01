@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ban Tracker</title>
+	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+</head>
+<body>
+	<header class="header">
+		<div class="container">
+			<div class="header__logo fl_l">
+				<a href="">Ban Tracker</a>
+			</div>
+			<div class="header__exit fl_r">
+				Выйти
+			</div>
+		</div>
+	</header>
+
+	<section class="accounts">
+		<div class="container">
+			<div class="Slider__line">
+				<div class="accounts__item">
+					<div class="accounts__avatarWrap">
+						<div class="accounts__avatar">
+							<div class="accounts__add">+</div>
+						</div>
+					</div>
+					<div class="accounts__name">Добавить</div>
+				</div>
+				<div class="accounts__item">
+					<div class="accounts__avatarWrap">
+						<img src="https://pp.userapi.com/c628730/v628730212/575ba/Tdskm2DLT2w.jpg?ava=1" class="accounts__avatar">
+					</div>
+					<div class="accounts__name">Паша <br> Бульбук</div>
+				</div>
+				<div class="accounts__item">
+					<div class="accounts__avatarWrap">
+						<img src="https://pp.userapi.com/c836228/v836228049/5d9d6/zuFR_Stl9uU.jpg?ava=1" class="accounts__avatar">
+					</div>
+					<div class="accounts__name">Вася <br> Пупкин</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="container">
+			<div class="content">
+				<div class="daily_statistics">
+					<div class="date fl_l">
+						26 января
+					</div>
+					<div class="statistic fl_r">
+						<div class="box"><span>+</span>25</div>
+						<div class="box"><span>-</span>2</div>
+						<div class="box">3</div>
+					</div>	
+				</div>
+				<a href="#openModal">
+					<div class="user_information ">
+						<div class="accounts__item fl_l">
+							<div class="accounts__avatarWrap">
+								<img src="https://pp.userapi.com/c628730/v628730212/575ba/Tdskm2DLT2w.jpg?ava=1" class="accounts__avatar">
+							</div>
+						</div>
+						<div class="accounts__name fl_l">Паша Бульбук</div>
+						<div class="statistic fl_r">
+							<div class="box"><span>+</span>23</div>
+							<div class="box"><span>-</span>0</div>
+							<div class="box">1</div>
+						</div>
+					</div>	
+				</a>
+				<a href="#openModal">
+					<div class="user_information ">
+						<div class="accounts__item fl_l">
+							<div class="accounts__avatarWrap">
+								<img src="https://pp.userapi.com/c836228/v836228049/5d9d6/zuFR_Stl9uU.jpg?ava=1" class="accounts__avatar">
+							</div>
+						</div>
+						<div class="accounts__name fl_l">Вася Пупкин</div>
+						<div class="statistic fl_r">
+							<div class="box"><span>+</span>0</div>
+							<div class="box"><span>-</span>2</div>
+							<div class="box">0</div>
+						</div>
+					</div>
+				</a>
+
+				<div id="openModal" class="modalDialog">
+					<div>
+						<a href="#close" title="Закрыть" class="close">x</a>
+						<div class="tabs">
+					    <input id="tab1" type="radio" name="tabs" checked>
+					    <label for="tab1" title="Подписки">Подписки</label>
+					 
+					    <input id="tab2" type="radio" name="tabs">
+					    <label for="tab2" title="Отписки">Отписки</label>
+					 
+					    <input id="tab3" type="radio" name="tabs">
+					    <label for="tab3" title="Баны">Баны</label>
+					 
+					    <section id="content-tab1">
+				    		<div class="group__item">
+									<div class="group__avatarWrap">
+										<img src="https://sun1-4.userapi.com/c845421/v845421749/187b3c/c4cLfxDT1lI.jpg?ava=1" data-post-id="-460389_5916412" data-post-click-type="post_owner_img" width="50" height="50" class="post_img">
+									</div>
+									<div class="group__name">Борщ</div>
+								</div>
+								<div class="group__item">
+									<div class="group__avatarWrap">
+										<img src="https://sun1-4.userapi.com/c845421/v845421749/187b3c/c4cLfxDT1lI.jpg?ava=1" data-post-id="-460389_5916412" data-post-click-type="post_owner_img" width="50" height="50" class="post_img">
+									</div>
+									<div class="group__name">Борщ</div>
+								</div>
+								<div class="group__item">
+									<div class="group__avatarWrap">
+										<img src="https://sun1-4.userapi.com/c845421/v845421749/187b3c/c4cLfxDT1lI.jpg?ava=1" data-post-id="-460389_5916412" data-post-click-type="post_owner_img" width="50" height="50" class="post_img">
+									</div>
+									<div class="group__name">Борщ</div>
+								</div>
+								<div class="group__item">
+									<div class="group__avatarWrap">
+										<img src="https://sun1-4.userapi.com/c845421/v845421749/187b3c/c4cLfxDT1lI.jpg?ava=1" data-post-id="-460389_5916412" data-post-click-type="post_owner_img" width="50" height="50" class="post_img">
+									</div>
+									<div class="group__name">Борщ</div>
+								</div>
+								<div class="group__item">
+									<div class="group__avatarWrap">
+										<img src="https://sun1-4.userapi.com/c845421/v845421749/187b3c/c4cLfxDT1lI.jpg?ava=1" data-post-id="-460389_5916412" data-post-click-type="post_owner_img" width="50" height="50" class="post_img">
+									</div>
+									<div class="group__name">Борщ</div>
+								</div>
+								<div class="group__item">
+									<div class="group__avatarWrap">
+										<img src="https://sun1-4.userapi.com/c845421/v845421749/187b3c/c4cLfxDT1lI.jpg?ava=1" data-post-id="-460389_5916412" data-post-click-type="post_owner_img" width="50" height="50" class="post_img">
+									</div>
+									<div class="group__name">Борщ</div>
+								</div>
+								<div class="group__item">
+									<div class="group__avatarWrap">
+										<img src="https://sun1-4.userapi.com/c845421/v845421749/187b3c/c4cLfxDT1lI.jpg?ava=1" data-post-id="-460389_5916412" data-post-click-type="post_owner_img" width="50" height="50" class="post_img">
+									</div>
+									<div class="group__name">Борщ</div>
+								</div>
+								<div class="group__item">
+									<div class="group__avatarWrap">
+										<img src="https://sun1-4.userapi.com/c845421/v845421749/187b3c/c4cLfxDT1lI.jpg?ava=1" data-post-id="-460389_5916412" data-post-click-type="post_owner_img" width="50" height="50" class="post_img">
+									</div>
+									<div class="group__name">Борщ</div>
+								</div>
+					    </section>  
+					    <section id="content-tab2">
+					    
+					    </section> 
+					    <section id="content-tab3">
+					     
+					    </section>     
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+		
+	<footer class="footer">
+
+	</footer>
+</body>
+</html>
